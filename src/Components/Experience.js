@@ -16,10 +16,12 @@ const Details = ({position, company, companyLink, time, address, work}) => {
 
 const Experience = () => {
 return (
-    <div className='mt-32'>
-        <h1 className='text-5xl text-center mb-32 w-full'>Experience</h1>
+    <div className='bg-slate-100 h-[100vh] w-full'>
+        
+        <h1 className='text-5xl text-center'>Experience</h1>
+        <br/>
 
-<div className='absolute left-8 top-0 w-4px h-full bg-red-500 origin-top'/>
+<div className='absolute left-8 top-0 w-4px h-full origin-top'/>
         <ul>
         <div className='w-[75%] mx-auto relative'>
             <Details position="Machine Learning Intern" company="NAVFAC EXWC" companyLink="https://exwc.navfac.navy.mil/" 

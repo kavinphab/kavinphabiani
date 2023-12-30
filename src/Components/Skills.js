@@ -2,8 +2,8 @@ import React from 'react';
 
 const Skills = () => {
     return (
-        <div className='grid grid-cols-2 gap-4 ml-20'>
-            <div>
+        <div className='bg-gradient-to-b from-slate-200 to-slate-100 grid grid-cols-2 gap-4 w-full h-[65vh]'>
+            <div className='mx-32'>
                 <h1 className='text-5xl'>Skills</h1>
                 <br/>
                 <p>Languages: Python, C++, JavaScript</p>
@@ -26,7 +26,7 @@ const Skills = () => {
                 <br/>
                 <h2 className='text-3xl'>Cutie Sentimental</h2>
                 <ul className='list-disc'>
-                    <li>Created a discord bot via Python that ingrates these algorithms into a bot that analyzes text and pictures</li>
+                    <li>Created a discord bot that ingrates these algorithms into a bot that analyzes text and pictures</li>
                     <li>Utilized OpenAi API’s natural language processing algorithm</li>
                     <li>Used OpenCV’s API to analyze images and detect smiles</li>
                     <li>Created website using React.js to make it easy to add our bot to any discord server</li>
