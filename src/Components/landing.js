@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Landing = () => {
     return (
-        <div className='w-full h-[100vh] flex justify-center items-center bg-gradient-to-b from-slate-400 to-slate-300'>
+        <div className='w-full h-[90vh] flex justify-center items-center bg-gradient-to-b from-slate-700 to-slate-500'>
             
             <div>
                 <h1 className='text-5xl'>Kavin Phabiani</h1>

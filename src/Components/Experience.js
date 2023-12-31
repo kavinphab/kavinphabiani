@@ -3,7 +3,7 @@ import React from 'react';
 const Details = ({position, company, companyLink, time, address, work}) => {
     return <li className='flex flex-col items-center mb-8'>
         <div>
-            <h3 className='font-bold text-2xl'>{position} @&nbsp;<a href={companyLink} className='text-sky-500'>{company}</a> </h3>
+            <h3 className='font-bold text-2xl'>{position} @&nbsp;<a href={companyLink} className='text-sky-500 hover:text-sky-300'>{company}</a> </h3>
             <div className='font-medium opacity-75'>
                 {time} | {address}
             </div>
@@ -16,9 +16,9 @@ const Details = ({position, company, companyLink, time, address, work}) => {
 
 const Experience = () => {
 return (
-    <div className='bg-slate-100 h-[100vh] w-full'>
+    <div className='bg-gradient-to-b from-slate-300 to-slate-200 h-[100vh] w-full'>
         
-        <h1 className='text-5xl text-center'>Experience</h1>
+        <h1 className='text-5xl text-center font-extrabold'>Experience</h1>
         <br/>
 
 <div className='absolute left-8 top-0 w-4px h-full origin-top'/>
