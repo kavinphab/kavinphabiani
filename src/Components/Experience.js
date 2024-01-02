@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Details = ({position, company, companyLink, time, address, work}) => {
-    return <li className='flex flex-col items-center mb-8'>
+    return <li className='flex flex-col items-center'>
         <div>
             <h3 className='font-bold text-2xl'>{position} @&nbsp;<a href={companyLink} className='text-sky-500 hover:text-sky-300'>{company}</a> </h3>
             <div className='font-medium opacity-75'>
@@ -16,14 +16,15 @@ const Details = ({position, company, companyLink, time, address, work}) => {
 
 const Experience = () => {
 return (
-    <div className='bg-gradient-to-b from-slate-400 to-slate-300 h-[90vh] w-full'>
+    // bg-gradient-to-b from-slate-400 to-slate-300
+    <div className=' h-auto w-full'>
         
         <h1 className='text-5xl text-center font-extrabold'>Experience</h1>
         <br/>
 
-<div className='absolute left-8 top-0 w-4px h-full origin-top'/>
+        <div className='absolute left-8 top-0 h-full origin-top'/>
         <ul>
-        <div className='w-[75%] mx-auto relative'>
+        <div className='w-[75%] mx-auto relative mb-8'>
             <Details position="Machine Learning Intern" company="NAVFAC EXWC" companyLink="https://exwc.navfac.navy.mil/" 
             time="June 2023 - August 2023" address="Port Hueneme, CA" 
             work="Implemented a convolutional neural network using TensorFlow to perform image classification,
@@ -32,7 +33,7 @@ return (
         </div>
         </ul>
         <ul>
-        <div className='w-[75%] mx-auto relative'>
+        <div className='w-[75%] mx-auto relative  mb-8'>
             <Details position="Data Science Intern" company="Monet Analytics" companyLink="https://www.monetanalytics.com/#/" 
             time="June 2022 - October 2022" address="Riverside, CA" 
             work="Increased accuracy of TikTok audience response score to 87% through creating a multivariate algorithm,
@@ -41,7 +42,7 @@ return (
         </div>
         </ul>
         <ul>
-        <div className='w-[75%] mx-auto relative'>
+        <div className='w-[75%] mx-auto relative '>
             <Details position="Lead Data Analyst Intern" company="Healthy Acres" companyLink="https://healthyacres.farm/" 
             time="June 2021 - August 2021" address="Moorpark, CA" 
             work="  Consolidated and analyzed import data on various forms of Moringa using Tableau,

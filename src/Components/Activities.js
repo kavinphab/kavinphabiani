@@ -14,12 +14,12 @@ const DisplayActivities = ({title, description,link}) => {
 
 const Activities = () => {
     return (
-        <div className='w-full h-[65vh] bg-gradient-to-b from-slate-300 to-slate-200'>
+        <div className='w-full h-auto pb-20'>
             <h1 className='text-5xl font-extrabold text-center'>Extracurricular Activities</h1>
             <br/>
             <div className='flex justify-center gap-80'>
                 <div> 
-                    <DisplayActivities title='Highlander Racing' description='UCR Formula SAE team'/>
+                    <DisplayActivities title='Highlander Racing' description='UCR Formula SAE team, part of firmware team'/>
                     <br/>
                     <DisplayActivities title='ACM @ UCR' description='UCR Association for Computing Machinery'/>
                     
@@ -28,7 +28,7 @@ const Activities = () => {
                 
                 
                 <div>
-                    <DisplayActivities title='GIS @ UCR' description='UCR Geographic Information Systems'/>
+                    <DisplayActivities title='GIS @ UCR' description='Founder of UCR Geographic Information Systems'/>
                     <br/>
                     <DisplayActivities title='Intamural Sports' description='Basketball, Tennis, Soccer'/>
                     

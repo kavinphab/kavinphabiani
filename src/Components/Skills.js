@@ -26,7 +26,7 @@ const DisplayProjects = ({title, description, link}) => {
 
 const Skills = () => {
     return (
-        <div className='bg-gradient-to-b from-slate-500 to-slate-400 grid grid-cols-2 gap-4 w-full h-[70vh]'>
+        <div className=' grid grid-cols-2 gap-4 w-full h-auto'>
             <div className='mx-32'>
                 <h1 className='text-5xl font-medium'>Skills</h1>
                 <br/>
