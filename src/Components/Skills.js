@@ -1,38 +1,57 @@
 import React from 'react';
 
+const DisplaySkills = ({title, desctiption}) => {
+
+    return (
+        <div>
+            <p className='inline-block text-2xl font-medium'>{title}</p>
+        <p className='inline-block'>: {desctiption}</p>
+        </div>
+        
+    );
+    }
+
+const DisplayProjects = ({title, description, link}) => {
+    return (
+        <div>
+            <a href={link} className='text-2xl text-sky-700 hover:text-sky-500 font-medium'> {title} 
+                </a>
+                <p className='font-medium mr-52'>
+                    {description}
+                </p>
+                <br/>
+        </div>
+    );
+}
+
 const Skills = () => {
     return (
-        <div className='bg-gradient-to-b from-slate-400 to-slate-300 grid grid-cols-2 gap-4 w-full h-[65vh]'>
+        <div className='bg-gradient-to-b from-slate-500 to-slate-400 grid grid-cols-2 gap-4 w-full h-[70vh]'>
             <div className='mx-32'>
                 <h1 className='text-5xl font-medium'>Skills</h1>
                 <br/>
-                <p>Languages: Python, C++, JavaScript</p>
-                <p>Tools: Git, Github, VS Code, Tableau</p>
-                <p>Frameworks: NextJS, Tailwind</p>
+                <DisplaySkills title='Languages' desctiption='Python, C++, SQL'/>
+                <DisplaySkills title='Tools' desctiption='Git, Github, VS Code, Tableau'/>
+                <DisplaySkills title='Frameworks' desctiption='NextJS, Tailwind'/>
                 <br/>
                 <h1 className='text-5xl font-medium'>Education</h1>
-                <p>BS in Computer Science form University of California Riverside</p>
+                <br/>
+                <p className='text-xl'>BS in Computer Science @ UC Riverside</p>
             </div>
                 
-            <div>
+            <div className='ml-10'>
             <h1 className='text-5xl font-medium'>Projects</h1>
                 <br/>
-                <a href='https://acm.cs.ucr.edu/' className='text-3xl text-sky-700 hover:text-sky-500'> ACM Official Website 
-                </a>
-                <ul className='list-disc'>
-                    <li>Developed a website for the Association for Computing Machinery (ACM) club at UCR</li>
-                    <li>Used NextJS and Tailwind to build the website</li>
-                    <li>Used Git and Github to collaborate with other developers</li>
-                </ul>
+                <DisplayProjects title='ACM @ UCR' description='Developed a website for the Association for Computing Machinery (ACM) club at UCR, 
+                Used NextJS and Tailwind to build the website, Used Git and Github to collaborate with other developers'
+                link='https://acm.cs.ucr.edu/'/>
+                
                 <br/>
-                <a href='https://kavinphab.github.io/' className='text-3xl text-sky-700 hover:text-sky-500'> Cutie Sentimental 
-                </a>
-                <ul className='list-disc'>
-                    <li>Created a discord bot that ingrates these algorithms into a bot that analyzes text and pictures</li>
-                    <li>Utilized OpenAi API’s natural language processing algorithm</li>
-                    <li>Used OpenCV’s API to analyze images and detect smiles</li>
-                    <li>Created website using React.js to make it easy to add our bot to any discord server</li>
-                </ul>
+                <DisplayProjects title='Cutie Sentimental' 
+                description='Created Discord bot to perform sentiment analysis, Utilized OpenAi API’s natural language processing algorithm, 
+                Used OpenCV’s API to analyze images and detect smiles, Created website using React.js to make it easy to add our bot to any discord server' 
+                link='https://kavinphab.github.io/'/>
+                
             </div>
         </div>
     );

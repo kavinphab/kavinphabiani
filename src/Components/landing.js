@@ -8,7 +8,7 @@ const Landing = () => {
         <div className='w-full h-[90vh] flex justify-center items-center bg-gradient-to-b from-slate-700 to-slate-500'>
             
             <div>
-                <h1 className='text-5xl'>Kavin Phabiani</h1>
+                <h1 className='text-6xl'>Kavin Phabiani</h1>
                 <br/>
                 <p className='flex justify-center'>Student | Aspiring Software Engineer</p>
                 <div className='mt-5 flex space-x-4 place-content-center'>

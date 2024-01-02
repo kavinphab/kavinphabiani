@@ -1,9 +1,9 @@
 import React from 'react';
-import picofme from './picofme.jpg'
+
 
 const About = () => {
     return (
-        <div className='w-full h-[50vh] flex justify-start items-center p-20 bg-gradient-to-b from-slate-500 to-slate-400' >
+        <div className='w-full h-[50vh] flex justify-start items-center p-20 bg-slate-500' >
             
             <div>
                 <h1 className='text-5xl w-full text-center font-extrabold'>A little about me</h1>

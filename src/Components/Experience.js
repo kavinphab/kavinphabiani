@@ -16,7 +16,7 @@ const Details = ({position, company, companyLink, time, address, work}) => {
 
 const Experience = () => {
 return (
-    <div className='bg-gradient-to-b from-slate-300 to-slate-200 h-[100vh] w-full'>
+    <div className='bg-gradient-to-b from-slate-400 to-slate-300 h-[90vh] w-full'>
         
         <h1 className='text-5xl text-center font-extrabold'>Experience</h1>
         <br/>
